@@ -1,6 +1,4 @@
 <template>
-
-
     <form @submit.prevent="updated"  class="body">
         <h1>EDITE</h1><br/>
         <strong class="View">
@@ -106,11 +104,14 @@
             }).then(
                 data=>{
                     console.log(this.data)
-                    this.$router.push("/")
+                    this.$router.push("/add")
                 }
             )
                 
 
+        },
+        beforeMount(){
+            this.GetByID()
         }
         
        

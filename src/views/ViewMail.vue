@@ -16,19 +16,16 @@
                     <th>Reciver</th>
                     <th>Objet</th>
                     <th>Description</th>
-                    <th width="250px">Action</th>
+                    <th >Action</th>
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="mails in mail" :key="mail.id">
+                <tr class="table table-striped" v-for="mails in mail" :key="mail.id">
                     <td>{{ mails.id }}</td>
                     <td>{{ mails.Email }}</td>
                     <td>{{ mails.reciver }}</td>
                     <td>{{ mails.objet }}</td>
                     <td>{{ mails.description }}</td>
-                    <td width="250px">Action</td>
-                
-
                     <td>
 
                         <a class="btn btn-primary" :href="`/edit/${mails.id}`">
@@ -87,13 +84,13 @@
     margin-left: 100px;
     width: 800px;
     padding: 0px;
-    padding-left: 80px;
+    padding-left: 10px;
 
 }
 
 .View {
     width: 200px;
-    margin-left: 522px;
+    margin-left: 500px;
     display: flex;
 }
 </style>
